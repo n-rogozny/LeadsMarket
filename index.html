@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>LeadsMarket</title>
+    <style>
+      * {
+      	padding: 0;
+      	margin: 0;
+      }
+      .preloader {
+      	position: fixed;
+      	z-index: 100500;
+      	width: 100%;
+      	height: 100%;
+      	background: #000 url(images/pictures/preloader.gif) center center no-repeat;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/jquery.fullPage.min.js"></script>
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <div class="preloader"></div>
+    <div class="header">
+      <div class="container clearfix">
+        <div class="logo__box"><span class="logo__img"><img src="../images/pictures/logo.png" alt=""></span><span class="logo__text"><span class="logo__title">LeadsMarket</span><span class="logo__discr">Сайты. Поисковые системы. Соц.сети.<br>Настройка рекламных кампаний. Трафик.</span></span></div>
+        <div class="header__phone">
+          <div class="header__phone-text">Звонок по России бесплатный</div>
+          <div class="header__phone-tel"><a href="tel:88043336620">8 (804) 333-66-20</a><a class="js-modal popup-modal call-btn" href="#modal">Перезвонить Вам?</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__line"></div>
+      <div class="container">
+        <div class="footer__contact">
+          <div class="change-color">Давайте организуем встречу и обсудим ваш проект?</div><a class="change-color" .change-colorhref="tel:88043336620">8 (804) 333-66-20</a><span class="change-color">/</span><a href="mailto:agency@leadsmk.ru">agency@leadsmk.ru</a>
+        </div>
+        <div class="footer__pages"><span class="current-pages"></span><span>/</span><span class="all-pages"></span></div>
+      </div>
+    </div>
+    <div class="mouse-icon white">
+      <div class="wheel"></div>
+    </div>
+    <div id="fullpage">
+      <div class="section home">
+        <div class="container">
+          <div class="home__title">Комплексный<br>интернет-маркетинг</div>
+          <div class="home__discr">Умеем привлекать большое количество<br>клиентов из интернета</div>
+          <div class="guarantee">
+            Гарантированный результат
+            —
+            за 21 день!
+          </div>
+          <div class="home-form">
+            <div class="home-form__title"><span>Бесплатно</span>настроим рекламу до первых заявок!</div>
+            <div class="home-form__row">
+              <form class="validate" data-parsley-validate>
+                <input type="hidden" value="Бесплатно настроим рекламу до первых заявок!" name="title">
+                <div class="home-form__box">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Сайт (если есть)" name="url">
+                  </div>
+                </div>
+                <div class="home-form__box">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Ниша (что продаёте?)" name="name-nisha" required>
+                  </div>
+                </div>
+                <div class="home-form__box">
+                  <div class="form-group">
+                    <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+                  </div>
+                </div>
+                <div class="home-form__box-send">
+                  <button class="btn js-send" type="submit">Настроить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section download">
+        <div class="container">
+          <div class="download__row">
+            <div class="download__img"><img class="responsive-img" src="../images/pictures/book.png"></div>
+            <div class="download__text">
+              <div class="download__title">Скачайте маркетинг-кит компании LeadsMarket</div>
+              <div class="download__discr">в котором отражён наш опыт настройки<br>рекламы, накопленный за 4 года</div><a class="popup-modal download__btn btn" href="#modal-kit">Скачать<span class="icon download-icon"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section team">
+        <div class="container">
+          <div class="team__title"> Мы - команда маркетологов</div>
+          <div class="team__discr">Даём гарантию на нашу работу — 100% нашего вознаграждения и 50% себестоимости проекта вносятся уже после его выполнения.</div>
+          <div class="team__row">
+            <div class="team__box">
+              <div class="team__text">Свой путь изучения маркетинга<br>мы начинали с интернет-коммерции (торговля товарами в интернете), которая<br>до сих пор остаётся одним из направлений<br>нашего бизнеса.</div>
+            </div>
+            <div class="team__box">
+              <div class="team__text">Работая над своими проектами<br>и проектами партнёров, мы научились<br>привликать клиентов из интернета - на<br>своём опыте.</div>
+            </div>
+          </div>
+          <div class="team__row">
+            <div class="team__box">
+              <div class="team__text">Первым нашим крупным проектом было<br>создание интернет-магазина<br>с посещаемостью более 20 000 человек<br>в месяц.</div>
+            </div>
+            <div class="team__box">
+              <div class="team__text">Теперь мы применяем полученный за годы<br>практики опыт в интернет-маркетинге<br>для выстраивания системы продаж<br>для наших клиентов.</div>
+            </div>
+          </div>
+          <div class="team__bnt-box"><a class="popup-modal btn" href="#modal-garant">Получить рекламу с гарантией</a></div>
+        </div>
+      </div>
+      <div class="section work">
+        <div class="container">
+          <div class="work-content"><span>Нет ничего убедительнее,</span>чем результаты наших работ</div>
+        </div>
+      </div>
+      <div class="section slide-section">
+        <div class="slide">
+          <div class="slide-wrap">
+            <div class="container">
+              <div class="category">Категория: Недвижимость и отели</div>
+              <div class="slide__row">
+                <div class="slide__logo"><img src="../images/pictures/blago.jpg"></div>
+                <div class="slide__box slide__box-img"><img src="../images/pictures/blago-mac.png"></div>
+                <div class="slide__box slide__box-text">
+                  <div class="slide__box-title">3 пансионата заполнены постояльцами</div>
+                  <p><span>Задача:</span>Заполнить пансионат для пожилых постояльцами и поддерживать постоянный уровень загрузки</p>
+                  <p><span>Решение:</span>Разработаны две версии Landing Page, настроена рекламная компания в Яндекс.Директ на разные типы запросов  - целевые, околоцелевые, конкуренты</p>
+                  <p><span>Задача</span>Достигнуть максимальный уровень загрузки в одном пансионате, после чего открыты и заполнены еще три пансионата</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-wrap">
+            <div class="container">
+              <div class="category">Категория: Интернет-магазины, розница со средним чеком 10 000 руб.</div>
+              <div class="slide__row">
+                <div class="slide__logo"><img src="../images/pictures/anchor.png"></div>
+                <div class="slide__box slide__box-img"><img src="../images/pictures/anchor-mac.png"></div>
+                <div class="slide__box slide__box-text">
+                  <div class="slide__box-title">300 тыс. руб. прибыли ежемесячно на продаже аксессуаров</div>
+                  <p><span>Задача:</span>Сформировать постоянный поток покупок аксессуаров через сайт.</p>
+                  <p><span>Решение:</span>Создан сайт для интернет-магазина. Проведена его внутренняя SEO-оптимизация. Настроен Яндекс.Директ, осуществлено продвижение в соцсетях.</p>
+                  <p><span>Результат:</span>70% брендовых запросов выведено в ТОП-10 поисковых систем, группы подняты в ТОП-2 внутреннего поиска во Вконтакте. За счёт проведения новых акций средний чек вырос в два раза.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-wrap">
+            <div class="container">
+              <div class="category">Категория: Прокат транспортных средств</div>
+              <div class="slide__row">
+                <div class="slide__logo"><img src="../images/pictures/kvadro.png"></div>
+                <div class="slide__box slide__box-img"><img src="../images/pictures/kvadro-mac.png"></div>
+                <div class="slide__box slide__box-text">
+                  <div class="slide__box-title">Запуск рекламы за 7 дней. Итог: полная загрузка автопарка</div>
+                  <p><span>Задача:</span>Быстрый запуск рекламного канала для привлечения клиентов на услуги по аренде квадроциклов с инструктором.</p>
+                  <p><span>Решение:</span>Заново настроены кампании Яндекс.Директ и Google AdWords.</p>
+                  <p><span>Результат:</span>Полная загрузка автопарка квадроциклов клиентами уже через 7 дней.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-wrap">
+            <div class="container">
+              <div class="category">Категория: B2B, оптовая торговля</div>
+              <div class="slide__row">
+                <div class="slide__logo"><img src="../images/pictures/novo.png"></div>
+                <div class="slide__box slide__box-img"><img src="../images/pictures/novo-mac.png"></div>
+                <div class="slide__box slide__box-text">
+                  <div class="slide__box-title">600 000 л незамерзайки продано оптом за месяц B2B-сегменту</div>
+                  <p><span>Задача:</span>В сезон стимулировать оптовую продажу максимального количества незамерзайки.</p>
+                  <p><span>Решение:</span>Выстроено предложение для B2B-сегмента. Создан Landing Page и настроена контекстная реклама.</p>
+                  <p><span>Результат:</span>На Landing Page отображена выгода B2B-сегменту, и его доля среди клиентов компании увеличена на 70%. Получены заказы на ежемесечные отгрузки. Оборот достиг 3 млн./мес</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section application">
+        <div class="container">
+          <div class="application-content">
+            <div class="application__title"> Оставьте заявку и получите</div>
+            <div class="application__discr">
+              предложение с примерным расчетом
+              себестоимости привлечения клиентов и основными инструментами продвижения
+            </div>
+            <div class="application-form">
+              <div class="application-form__title">в течение 2 часов</div>
+              <div class="application-form__row">
+                <form class="validate">
+                  <input type="hidden" value="Узнайте, что мы можем предложить именно для вашего бизнеса" name="title">
+                  <div class="application-form__box">
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Имя" required name="name">
+                    </div>
+                  </div>
+                  <div class="application-form__box">
+                    <div class="form-group">
+                      <input class="form-control js-mask" type="tel" placeholder="Телефон" required name="phone">
+                    </div>
+                  </div>
+                  <div class="application-form__box-send">
+                    <input class="btn js-send" type="submit" value="Получить">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section provider">
+        <div class="container">
+          <div class="provider__text">Пока вы размышляете и сравниваете разных поставщиков, мы уже могли бы начать привлекать поток заявок.</div>
+          <div class="provider__row">
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon stool"></span></div>
+                </div>
+                <div class="elem_text">«Аренда рабочих мест»<span>Заявка =<span>70 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon lightning"></span></div>
+                </div>
+                <div class="elem_text">«Электроника»<span>Заявка =<span>130 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon medicine"></span></div>
+                </div>
+                <div class="elem_text">«Медицина»<span>Заявка =<span>150 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon aerial"></span></div>
+                </div>
+                <div class="elem_text">«Автовышки»<span>Заявка =<span>160 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon moto"></span></div>
+                </div>
+                <div class="elem_text">«Аренда квадроциклов»<span>Заявка =<span>170 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon perfumery"></span></div>
+                </div>
+                <div class="elem_text">«Парфюмерия»<span>Заявка =<span>200 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon cleaning"></span></div>
+                </div>
+                <div class="elem_text">«Очистка воды»<span>Заявка =<span>300 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon glasses"></span></div>
+                </div>
+                <div class="elem_text">«Мужские аксессуары»<span>Заявка =<span>350 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon wholesale"></span></div>
+                </div>
+                <div class="elem_text">«Незамерзайка оптом»<span>Заявка =<span>350 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon pension"></span></div>
+                </div>
+                <div class="elem_text">«Пансионат для пожилых»<span>Заявка =<span>400 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon homes"></span></div>
+                </div>
+                <div class="elem_text">«загородные дома»<span>Заявка =<span>500 руб.</span></span></div>
+              </div>
+            </div>
+            <div>
+              <div class="elem">
+                <div>
+                  <div class="icon-block"><span class="icon repairs"></span></div>
+                </div>
+                <div class="elem_text">«Ремонт квартир»<span>Заявка =<span>600 руб.</span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="discover">
+            <div class="discover__text">Узнайте примерную стоимость заявки в вашей нише. Смелее!</div>
+            <div class="discover__btn-box"><a class="popup-modal btn" href="#modal-nisha">Узнать</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="section yourself">
+        <div class="container">
+          <div class="yourself-content"><span>Вы, конечно, можете</span>сами заниматься<br>интернет-маркетингом<br>вашей компании...</div>
+        </div>
+      </div>
+      <div class="section but">
+        <div class="container but-head">
+          <div class="but__row">
+            <div class="but-box but-head__text"><span>...но</span>для этого<br>вам придётся:</div>
+            <div class="but-box">
+              <div class="substrate-box">
+                <div class="clock">
+                  <div class="clock__time">715<span>часов</span></div>
+                  <div class="clock__text">
+                    получать знания из книг, курсов, мастер-классов
+                    и тренингов
+                  </div>
+                </div>
+              </div>
+              <div class="substrate-box">
+                <div class="clock">
+                  <div class="clock__time small__val">13 200<span>часов</span></div>
+                  <div class="clock__text">потратить<br>на практику</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container but-body">
+          <div class="but__row">
+            <div class="but-box__text">А потом для самостоятельного ведения рекламных кампаний в интернете вам придётся изучать задачи и умудряться применять накопленные знания.</div>
+            <div class="but-box__text">Как минимум вам надо будет обладать талантом привлечения большого потока потенциальных клиентов из различных каналов.</div>
+            <div class="but-box__text">
+              Так же не помешает способность анализировать, проводить А/Б тесты, наблюдать за CTR, замерять конверсии, следить
+              за показателями по разным объявлениям и площадкам.
+            </div>
+            <div class="but-box__text">
+              А ещё вам пригодятся навыки работы с целевой аудиторией, чтобы настраивать рекламу
+              по типам устройств, по полу, возрасту, интересам...
+            </div>
+          </div>
+          <div class="lastly">И, безусловно, надо предвидеть, что делать дальше —<span>Мы знаем что делать дальше</span></div>
+        </div>
+      </div>
+      <div class="section number">
+        <div class="container">
+          <div class="number__title"> компания LeadsMarket в числах</div>
+          <div class="number__row">
+            <div class="number__box"><span class="icon diamond-icon"></span>
+              <div class="number__text">30 дней</div>
+              <div class="number__text-discr">
+                средний срок окупаемости
+                созданной нами рекламы
+              </div>
+            </div>
+            <div class="number__box"><span class="icon diamond-icon"></span>
+              <div class="number__text">Более 100</div>
+              <div class="number__text-discr">реализованных<br>проектов</div>
+            </div>
+            <div class="number__box"><span class="icon diamond-icon"></span>
+              <div class="number__text">18 часов</div>
+              <div class="number__text-discr">необходимо для получения<br>первой заявки</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--include components/section_14.pug-->
+      <div class="section case">
+        <div class="case-top">
+          <div class="container"><span>В 90% случаев</span>маркетологи занимаются узкой настройкой одного рекламного канала</div>
+        </div>
+        <div class="case-bottom">
+          <div class="container">
+            <div class="logo-elem"><img src="../images/pictures/anchor.png"><span>Anchor Store, интернет-магазин аксессуаров</span></div>
+            <div class="case__row">
+              <div class="case-box">
+                <div class="case-box__icon"><span class="icon money"></span></div>
+                <div class="case-box__text">Себестоимость привлечения<br>одного клиента 550 руб. при<br>использовании одного рекламного<br>канала Яндекс Директ</div>
+              </div>
+              <div class="case-box">
+                <div class="case-box__icon"><span class="icon graph"></span></div>
+                <div class="case-box__text">Снижение стоимости<br>привлечение одного клиента до 260<br>руб. при подключении Google<br>AdWords и рекламы во Вконтакте</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section why-we">
+        <div class="container">
+          <div class="why-we__title">Почему<span>мы?</span></div>
+          <div class="wrap-compare">
+            <div class="c-itms table-responsive">
+              <table>
+                <tr>
+                  <td class="c-compare"></td>
+                  <td>
+                    <div class="td name">TOP Digital-агентств<br>(GRAPE, Mosaic, Red Keds etc)</div>
+                  </td>
+                  <td class="ls-marker">
+                    <div class="td name-big">LeadsMarket</div>
+                  </td>
+                  <td>
+                    <div class="td name">Фрилансеры и студенты</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="c-compare"> Гарантия</td>
+                  <td>
+                    <div class="td">Никаких гарантий, всегда ссылаются на своё известное имя</div>
+                  </td>
+                  <td class="ls-marker">
+                    <div class="td">Гарантируем результат деньгами: 100% нашего вознаграждения и 50% себестоимости проекта вносятся уже после его выполнения</div>
+                  </td>
+                  <td>
+                    <div class="td">Гарантия 200%. Однако исполнитель пропадает после выполнения проекта. А иногда и раньше</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="c-compare">  Срок, в среднем</td>
+                  <td>
+                    <div class="td">6 недель</div>
+                  </td>
+                  <td class="ls-marker">
+                    <div class="td">3 недели</div>
+                  </td>
+                  <td>
+                    <div class="td">1 день — 20 недель</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="c-compare"> Цена</td>
+                  <td>
+                    <div class="td">от 800 тыс. руб.</div>
+                  </td>
+                  <td class="ls-marker">
+                    <div class="td">от 75 тыс. руб.</div>
+                  </td>
+                  <td>
+                    <div class="td">От 3 тыс. руб. за всё</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section rates">
+        <div class="container">
+          <div class="rates__title">Тарифы, сформированные клиентами</div>
+          <div class="rates__row">
+            <div class="rates__box">
+              <div>
+                <div class="rates__box-head">Минимум</div>
+                <div class="rates__price">75 тыс. руб.</div>
+                <div class="rates__text">
+                  <ul>
+                    <li>Анализ конкурентов</li>
+                    <li>Упаковка предложения</li>
+                    <li>Создание landing page</li>
+                    <li>Адаптивная верстка</li>
+                    <li>Проведение А/Б тестов</li>
+                    <li>Настройка Яндекс.Директ</li>
+                    <li>Настройка Google AdWords</li>
+                    <li>Ретаргетинг Яндекс</li>
+                    <li>Подключение биддера</li>
+                    <li>Установка Яндекс.Метрики</li>
+                    <li>Установка Google Analytics</li>
+                  </ul>
+                  <p><span>Срок окупаемости:<span>1.5 месяц</span></span></p>
+                  <div class="tarif">
+                    <p>Ведение —<span>3 недели</span></p>
+                  </div><a class="popup-modal btn" href="#modal-zakaz-1">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <div class="rates__box">
+              <div>
+                <div class="rates__box-head">Работаем вдолгую</div>
+                <div class="rates__price">250 тыс. руб.</div>
+                <div class="rates__text">
+                  <div class="rates__name">тариф «Минимум» +</div>
+                  <ul>
+                    <li>Настройка Таргета ВК</li>
+                    <li>Реклама Instagram</li>
+                    <li>Массфоловинг Instagram</li>
+                    <li>Работа с блогерами Instagram</li>
+                    <li>Настройка таргета Facebook</li>
+                    <li>Настройка мультилендинга</li>
+                    <li>Проведение фотосессии</li>
+                    <li>CRM</li>
+                    <li>Call Tracking</li>
+                    <li>Сквозная аналитика</li>
+                    <li>Работа с тизерными сетями</li>
+                    <li>Оформление профилей социальных сетей</li>
+                  </ul>
+                  <p><span>Имеется рассрочка</span>Основная часть оплачивается по результату</p>
+                  <p><span>Срок окупаемости:<span>3 месяца</span></span></p>
+                  <div class="tarif">
+                    <p>Ведение —<span>5 недель</span></p>
+                  </div><a class="popup-modal btn" href="#modal-zakaz-2">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <div class="rates__box">
+              <div>
+                <div class="rates__box-head">Берём по-максимуму</div>
+                <div class="rates__price">500 тыс. руб.</div>
+                <div class="rates__text">
+                  <div class="rates__name">тариф «Работаем вдолгую» +</div>
+                  <ul>
+                    <li>Разработка многостраничного сайта</li>
+                    <li>SEO-продвижение - 5 недель</li>
+                    <li>Разработка сценария продающего видео</li>
+                    <li>Съемка и монтаж видео</li>
+                  </ul>
+                  <p><span>Имеется рассрочка</span>Основная часть оплачивается по результату</p>
+                  <p><span>Срок окупаемости:<span>2 месяца</span></span></p>
+                  <div class="tarif">
+                    <p>Ведение —<span>7 недель</span></p>
+                  </div><a class="popup-modal btn" href="#modal-zakaz-3">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section questions">
+        <div class="container">
+          <div class="questions__text"><span>Ещё остались вопросы?</span>Или хотите, чтобы мы абсолютно бесплатно исправили 3 ошибки в ваших рекламных кампаниях?</div>
+          <div class="questions__box">
+            <div class="questions__box-img"><img src="../images/pictures/Anatoliy.jpg"></div>
+            <div class="questions__box-text"><span>Анатолий Александров</span>Ваш личный менеджер</div>
+            <div class="questions__box-btn"><a class="popup-modal btn" href="#modal-consultant">Получить консультацию</a><a class="popup-modal btn" href="#modal-error">Исправить 3 ошибки</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="section founder">
+        <div class="container">
+          <div class="founder__box">
+            <div class="founder__name">Биняков Александр<span>Основатель компании</span></div>
+            <div class="founder__tel"><a href="+79313751170">+7 (931) 375-11-70</a></div>
+            <div class="founder__text">
+              <p>Если у вас есть вопросы или комментарии, напишите<br>в WhatsApp, Viber, Telegram лично мне, Бинякову Александру,<br>директору компании LeadsMarket.</p>
+              <p>Отвечу оперативно. Пишите!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section map">
+        <div class="map__content">
+          <div class="map__content-wrap">
+            <div class="map__content-title">Наши контакты:</div>
+            <div class="map__content-text">
+              <p>Адрес: Санкт-Петербург, Лиговский пр, д. 50, к. 13</p>
+              <p>Часы работы офиса: 10:00-20:00</p>
+            </div>
+            <div class="map__content-text">
+              <p>Телефон:<a href="88043336620">8 (804) 333-66-20</a></p>
+              <p>E-mail:<a href="agency@leadsmk.ru">agency@leadsmk.ru</a></p>
+            </div>
+            <div class="social"><a href="//www.instagram.com/marketolog_binyakov/" target="_blank"><span class="icon inst"></span></a><a href="//vk.com/leads_market" target="_blank"><span class="icon vk"></span></a></div>
+          </div>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+    <form class="mfp-hide white-popup-block validate modal" id="modal">
+      <div class="modal-head">Заказать звонок менеджера в течение 10 минут</div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Имя" name="name" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+          <input type="hidden" name="title" value="Заказать звонок менеджера в течение 10 минут">
+        </div>
+        <input class="btn modal-btn js-send" type="submit" value="Перезвонить вам?">
+      </div>
+    </form>
+    <form class="mfp-hide white-popup-block validate modal" id="modal-kit">
+      <div class="modal-head">Введите данные и вы получите маркетинг-кит на вашу электронную почту:</div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input class="form-control" type="email" placeholder="E-mail" name="email" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+        </div>
+        <input class="title-modal-input" type="hidden" name="title" value="Введите данные и вы получите маркетинг-кит на вашу электронную почту:">
+        <input class="btn modal-btn js-send" type="submit" value="Получить">
+      </div>
+    </form>
+    <form class="mfp-hide white-popup-block validate modal" id="modal-nisha">
+      <div class="modal-head">Узнать примерную стоимость заявки</div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Ниша (что продаёте?)" name="name-nisha" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+          <input type="hidden" name="title" value="Узнать примерную стоимость заявки">
+        </div>
+        <input class="btn modal-btn js-send" type="submit" value="Узнать">
+      </div>
+    </form>
+    <form class="mfp-hide white-popup-block validate modal" id="modal-zakaz-1">
+      <div class="modal-head">Заказать тариф "Минимум"</div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Имя" name="name" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+          <input type="hidden" name="title" value="Заказать тариф &quot;Минимум&quot;">
+        </div>
+        <input class="btn modal-btn js-send" type="submit" value="Заказать">
+      </div>
+    </form>
+    <form class="mfp-hide white-popup-block validate modal" id="modal-zakaz-2">
+      <div class="modal-head">Заказать тариф "Работаем вдолгую"</div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Имя" name="name" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+          <input type="hidden" name="title" value="Заказать тариф &quot;Работаем вдолгую&quot;">
+        </div>
+        <input class="btn modal-btn js-send" type="submit" value="Заказать">
+      </div>
+    </form>
+    <form class="mfp-hide white-popup-block validate modal" id="modal-zakaz-3">
+      <div class="modal-head">Заказать тариф "Берём по-максимуму"</div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Имя" name="name" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+          <input type="hidden" name="title" value="Заказать тариф &quot;Берём по-максимуму&quot;">
+        </div>
+        <input class="btn modal-btn js-send" type="submit" value="Заказать">
+      </div>
+    </form>
+    <form class="mfp-hide white-popup-block validate modal" id="modal-consultant">
+      <div class="modal-head">Получить консультацию от Анатолия Александрова</div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Имя" name="name" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+          <input type="hidden" name="title" value="Получить консультацию от Анатолия Александрова">
+        </div>
+        <input class="btn modal-btn js-send" type="submit" value="Получить">
+      </div>
+    </form>
+    <form class="mfp-hide white-popup-block validate modal" id="modal-error">
+      <div class="modal-head">Исправить 3 ошибки в ваших рекламных кампаниях</div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Имя" name="name" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+          <input type="hidden" name="title" value="Исправить 3 ошибки в ваших рекламных кампаниях">
+        </div>
+        <input class="btn modal-btn js-send" type="submit" value="Исправить">
+      </div>
+    </form>
+    <form class="mfp-hide white-popup-block validate modal" id="modal-garant">
+      <div class="modal-head">Получить рекламную кампанию с гарантией</div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input class="form-control" type="email" placeholder="E-mail" name="email" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control js-mask" type="tel" placeholder="Телефон" name="phone" required>
+          <input type="hidden" name="title" value="Получить рекламную кампанию с гарантией">
+        </div>
+        <input class="btn modal-btn js-send" type="submit" value="Получить">
+      </div>
+    </form>
+  </body>
+  <script src="//api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU" async></script>
+  <script>
+    $( window ).load(function() {
+    if($('#map').length) {
+    ymaps.ready(init);
+    }
+    function init () {
+    var myMap = new ymaps.Map('map', {
+    center: [59.9252,30.3597],
+    zoom: 15
+    });
+    var myPlacemark = new ymaps.Placemark(
+    [59.9253,30.3580]
+    );
+    myMap.geoObjects.add(myPlacemark);
+    }
+    });
+  </script>
+  <!-- Facebook Pixel Code-->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+    	if (f.fbq)return;
+    	n = f.fbq = function () {
+    		n.callMethod ?
+    				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    	};
+    	if (!f._fbq)f._fbq = n;
+    	n.push = n;
+    	n.loaded = !0;
+    	n.version = '2.0';
+    	n.queue = [];
+    	t = b.createElement(e);
+    	t.async = !0;
+    	t.src = v;
+    	s = b.getElementsByTagName(e)[0];
+    	s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+    		'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '382824292058855');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=382824292058855&amp;ev=PageView	    &amp;noscript=1"></noscript>
+  <!-- End Facebook Pixel Code-->
+  <!-- Yandex.Metrika counter-->
+  <script type="text/javascript">
+    (function (d, w, c) {
+    	(w[c] = w[c] || []).push(function () {
+    		try {
+    			w.yaCounter39503210 = new Ya.Metrika({
+    				id: 39503210,
+    				clickmap: true,
+    				trackLinks: true,
+    				accurateTrackBounce: true,
+    				webvisor: true,
+    				trackHash: true
+    			});
+    		} catch (e) {
+    		}
+    	});
+    	var n = d.getElementsByTagName("script")[0],
+    			s = d.createElement("script"),
+    			f = function () {
+    				n.parentNode.insertBefore(s, n);
+    			};
+    	s.type = "text/javascript";
+    	s.async = true;
+    	s.src = "https://mc.yandex.ru/metrika/watch.js";
+    	if (w.opera == "[object Opera]") {
+    		d.addEventListener("DOMContentLoaded", f, false);
+    	} else {
+    		f();
+    	}
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/39503210" style="position:absolute; left:-9999px;" alt=""></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter-->
+</html>
